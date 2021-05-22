@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --header: #f8f5f1;
+}
+body{
+    background: #fff;
+    line-height: 1.2;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+/*header css*/
+.mobile-menu{
+    display:none;
+}
+@media screen and (min-width: 662px){
+    .mobile-menu{
+        display: block;
+    }
+}
+.open-menu{
+    display:block;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.wrapper .header{
+    padding: 1rem 3rem;
+    background: var(--header);
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.wrapper .header .logo{
+
+}
+.wrapper .header .header-nav{
+    text-align: right;
+}
+.wrapper .header .header-nav .header-toggle-btn{
+    text-decoration: none;
+    font-size: 12pt;
+    color: #444;
+    display:none;
+}
+.wrapper .header .header-nav ul {
+    list-style:none;
+}
+.wrapper .header .header-nav ul li{
+    display: inline-block;
+    margin-left: 1.4rem;
+}
+.wrapper .header .header-nav ul li a{
+    text-decoration: none;
+    font-size: 13pt;
+    letter-spacing: 1.1px;
+    font-family: 'Montserrat', sans-serif;
+    transition: 1s ease;
+
+}
+.wrapper .header .header-nav ul li a i{
+    margin-right: 0.4rem;
+}
+
+.wrapper .header .header-nav ul li a:hover{
+    background: #f8a488;
+    border-radius: 1rem;
+    padding: 0.1rem;
+    color: #fff;
+}
+
+.wrapper .header .header-nav ul li a.expand_btn:hover{
+    background:none;
+    padding: 0;
+    color: inherit;
+}
+@media screen and (min-width: 662px) and (max-width:990px) {
+    .wrapper .header{
+        grid-template-columns: 1fr;
+    }
+    .wrapper .header .logo{
+        text-align:center;
+    }
+    .wrapper .header .header-nav{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .wrapper .header .header-nav ul li a{
+        font-size: 12pt;
+    }
+
+}
+
+@media screen and (max-width:661px) {
+    .wrapper .header .header-nav .header-toggle-btn{
+        display:block;
+    }
+   
+    .wrapper .header .header-nav ul li{
+        display:block;
+        margin: 0.1rem 0;
+    }
+    
+}
+
+/*header css ends*/
+
+
